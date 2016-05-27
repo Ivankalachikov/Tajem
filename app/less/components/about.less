@@ -1,0 +1,48 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.about {
+	&__inner{
+		.inner();
+		.clr();
+		padding-top: 70px;
+		
+	}
+
+	&__logo{
+		.sprite(@about-logo);
+		float: left;
+		margin-left: 64px;
+		margin-right: 45px;
+	}
+
+	&__text-wrap{
+		float: left;
+		width: 57%;
+	}
+
+	&__title{
+		font-family: "PlayfairDisplay",serif;
+		color:  #403d4b;
+		font-size: 1.571rem;
+		margin-bottom: 28px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&__text{
+		color:  #403d4b;
+		font-weight: 300;
+		margin-bottom: 31px;
+		width: 57%;
+	}
+
+	&__btn{
+		.btn();
+		margin-bottom: 70px;
+		&:hover{
+			color: darken(@text-blue,20);
+		}
+	}
+}

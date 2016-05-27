@@ -1,0 +1,160 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.footer{
+	background: #2e274d url("../img/bg-footer.jpg") center bottom no-repeat;
+	background-size: cover;
+	color: @text-white;
+	&__inner{
+		.inner();
+		padding-top: 70px;
+		padding-bottom: 70px;
+		.clr();
+	}
+
+	&__col-left{
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+	}
+	&__col-mid{
+		width: 30%;
+		margin-right: 4%;
+		float: left;
+	}
+	&__col-right{
+		width: 30%;
+		float: right;
+	}
+
+	&__logo{
+		.sprite(@header-logo);
+		margin-bottom: 25px;
+	}
+
+	&__text-block{
+		font-weight: 300;
+	}
+
+	&__contact-title{
+		font-size: 1.071rem;
+		font-weight: 900;
+		margin-bottom: 40px;
+	}
+
+	&__contact-address{
+		margin-left: 30px;
+		position: relative;
+		font-weight: 300;
+		margin-bottom: 27px;
+	}
+
+	&__contact-tel{
+		margin-left: 30px;
+		position: relative;
+	}
+
+	&__contact-link{
+		font-weight: 300;
+		color: @text-white;
+		text-decoration: none;
+	}
+
+	&__subscribe-title{
+		font-size: 1.071rem;
+		font-weight: 900;
+		margin-bottom: 40px;
+	}
+
+	&__subscribe-input{
+		background-color: transparent;
+		padding: 16px;
+		outline: none;
+		border: 1px solid #fff;
+		color: @text-white;
+		margin-bottom: 25px;
+	}
+
+	&__subscribe__btn{
+		.btn();
+		background-color: rgba(255,255,255,.5);
+		padding: 6px 20px;
+		vertical-align: top;
+		border-color: rgba(255,255,255,.6);;
+	}
+	
+	&__soc-btn{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		border:1px solid @text-white;
+		border-radius:50%;
+		text-align: center;
+		margin: 0 3px;
+		&:hover svg{
+			fill: @text-blue;
+		}
+		&:hover{
+			border-color: @text-blue;
+		}
+	}
+
+	&__btm-line{
+		padding-top: 70px;
+		clear: both;
+		.clr();
+	}
+
+	&__nav{
+		float: left;
+	}
+
+	&__nav-list{
+		list-style:none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__nav-item{
+		display: inline-block;
+		margin-right: 30px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	&__nav-link{
+		color: @text-white;
+		text-decoration: none;
+		&:hover{
+			color: @text-blue;
+		}
+	}
+
+	&__copyright{
+		float: right;
+
+	}
+}
+
+.point{
+	position: absolute;
+	left: -25px;
+	fill:@text-white;
+}
+
+.phone{
+	position: absolute;
+	left: -25px;
+	fill:@text-white;
+}
+
+.send{
+	fill:#000000;
+}
+
+.soc-icon{
+	fill:@text-white;
+	height: 35px;
+}

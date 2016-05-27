@@ -1,0 +1,64 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.clients{
+	width: 45%;
+	float: right;
+	&__title{
+		font-family: "PlayfairDisplay", serif;
+		color:  #413d4b;
+		font-size: 1.571rem;
+		font-weight: 700;
+		margin-bottom: 45px;
+	}
+
+	&__logo-wrap{
+		display: inline-block;
+		vertical-align: middle;
+		width: 160px;
+		margin-right: 80px;
+		margin-bottom: 40px;
+		&:nth-child(odd){
+			margin-right: 0;
+		}
+	}
+
+	&__logo{
+		margin: 0 auto;
+		&:hover{
+			transform:scale(1.05);
+		}
+		&--1{
+			.sprite(@Barneys_New_York_Logo);
+		}
+		&--2{
+			.sprite(@Billabong-logo);
+		}
+		&--3{
+			.sprite(@Calvin_klein_logo);
+		}
+		&--4{
+			.sprite(@Converse_logo);
+		}
+		&--5{
+			.sprite(@Gucci_Logo);
+		}
+		&--6{
+			.sprite(@Levis_logo);
+		}
+		&--7{
+			.sprite(@Logo_NIKE);
+		}
+		&--8{
+			.sprite(@Logo_of_Mango);
+		}
+		&--9{
+			.sprite(@Puma_Logo);
+		}
+		&--10{
+			.sprite(@Zara_Logo);
+		}
+	}
+
+}

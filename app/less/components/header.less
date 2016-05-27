@@ -1,0 +1,71 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.header{
+	
+	background: #2e274d url("../img/bg-header.jpg") center bottom no-repeat;
+	color: @text-white;
+	position: relative;
+
+	&__inner{
+		.inner();
+	}
+
+	&__top-line{
+		.clr();
+		padding-top: 15px;
+	}
+
+	&__logo-wrap{
+		float: left;
+	}
+
+	&__logo-img{
+		.sprite(@header-logo);
+	}
+
+	&__title{
+		font-family: "PlayfairDisplay",serif;
+		font-size: 2.286rem;
+		font-weight: 900;
+		text-align: center;
+   	z-index: 1000;
+   	width: 100%;
+   	display: block;
+   	left: 0;
+   	right: 0;
+   	top: 33%;
+   	margin: 0;
+   	transition: background-color .5s;
+	}
+
+	&__text{
+		margin-top: 50px;
+		font-weight: 300;
+		padding: 0 80px;
+		text-align: center;
+		margin-bottom: 50px;
+		position: relative;
+		&::before{
+			content: '';
+			width: 50px;
+			height: 1px;
+			display: block;
+			position: absolute;
+			background-color: @text-blue;
+			top: -21px;
+			left: 50%;
+			margin-left: -25px;
+		}
+	}
+
+	&__btn{
+		.btn();
+		margin-bottom: 50px;
+	}
+
+	&__slide-item{
+	text-align: center;
+}
+}

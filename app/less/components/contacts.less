@@ -1,0 +1,49 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.contacts{
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+	&__inner{
+		.inner();
+		.clr();
+	}
+
+	&__form{
+		width: 45%;
+		float: left;
+		display: block;
+		margin-right: 4%;
+	}
+
+	&__title{
+		font-family: "PlayfairDisplay", serif;
+		color:  #413d4b;
+		font-size: 1.571rem;
+		font-weight: 700;
+		margin-bottom: 35px;
+	}
+
+	&__input{
+		padding: 18px 21px;
+		color: #413d4b;
+		display: block;
+		width: 88%;
+		margin-bottom: 23px;
+		outline:none;
+	}
+
+	&__message{
+		resize: none;
+	}
+
+	&__submit{
+		.btn();
+		background-color: transparent;
+		&:hover{
+			color: darken(@text-blue,20);
+		}
+	}
+}

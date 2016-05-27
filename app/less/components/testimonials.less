@@ -1,0 +1,42 @@
+@import "mixin.less";
+@import "variables.less";
+@import "typography.less";
+
+.testimonials{
+	background: #2e274d url("../img/bg-header.jpg") center bottom no-repeat;
+	background-size: cover;
+	&__inner{
+		.inner();
+	}
+
+	&__quote-icon{
+		padding-top: 67px;
+		text-align: center;
+		font-family: "PlayfairDisplay",serif;
+		color:  #ffffff;
+		font-size: 7.143rem;
+		line-height: 0.7;
+	}
+
+	&__item{
+		color: @text-white;
+	}
+
+	&__text{
+		font-family:"PlayfairDisplay",serif;
+		color:  #ffffff;
+		font-size: 1.143rem;
+		margin-bottom: 52px;
+	}
+
+	&__name{
+		font-weight: 900;
+		margin-bottom: 10px;
+	}
+
+	&__position{
+		font-size: 0.93rem;
+		font-weight: 300;
+	}
+}
+

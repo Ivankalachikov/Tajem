@@ -1,0 +1,42 @@
+@import "variables.less";
+
+.inner(){
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.clr(){
+	&:after{
+		content:"";
+		display: table;
+		clear:both;
+	}
+}
+
+.btn(){
+	display: inline-block;
+	font-family: HammersmithOne;
+	color: @text-blue;
+	font-size: 1.143rem;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	text-align: center;
+	padding: 15px;
+	border: 1px solid @text-blue;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	&:hover{
+		background: rgba(255,255,255,.2);
+	}
+}
+
+.top-row(){
+	border-bottom: 1px solid #ebebeb;
+}
+
+.mid-col(){
+	border-left: 1px solid #ebebeb;;
+	border-right: 1px solid #ebebeb;;
+}
